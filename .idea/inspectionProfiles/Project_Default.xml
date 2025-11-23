@@ -19,6 +19,8 @@
           <option value="catsgram-v1" />
           <option value="catsgram-v1" />
           <option value="catsgram-v1" />
+          <option value="catsgram-v1" />
+          <option value="catsgram-v1" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -37,10 +39,14 @@
           <option value="org.springframework:spring-context:6.1.5" />
           <option value="org.springframework:spring-beans:6.1.5" />
           <option value="org.apache.tomcat.embed:tomcat-embed-core:10.1.19" />
+          <option value="org.springframework:spring-core:6.1.5" />
+          <option value="org.springframework.boot:spring-boot:3.2.4" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />
