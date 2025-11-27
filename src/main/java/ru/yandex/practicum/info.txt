@@ -6,3 +6,10 @@ POST
     "authorId": 1,
     "description": "Мой любимый котик!"
 }
+
+{
+  "id": 31,
+  "authorId": 13,
+  "postDate": "2023-10-31T13:31:103",
+  "description": "Мой любимый котик!"
+}

@@ -1,5 +1,6 @@
 package ru.yandex.practicum.service;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.yandex.practicum.exception.ConditionsNotMetException;
 import ru.yandex.practicum.exception.DuplicatedDataException;
@@ -13,6 +14,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
     private final Map<Long, User> users = new HashMap<>();

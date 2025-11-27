@@ -1,5 +1,7 @@
 package ru.yandex.practicum.controller;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import ru.yandex.practicum.model.User;
 import ru.yandex.practicum.service.UserService;
@@ -9,12 +11,9 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
+@RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
-
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
 
     @GetMapping
     public Collection<User> findAll() {
@@ -27,6 +26,7 @@ public class UserController {
     }
 
     @PutMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public User update(@RequestBody User newUser) {
         return userService.update(newUser);
     }
